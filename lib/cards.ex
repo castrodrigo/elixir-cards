@@ -22,8 +22,15 @@ defmodule Cards do
     Enum.shuffle(deck)
   end
 
-  @doc """
+  @doc ~S"""
     Verfies if one received `card` is inside a specified `deck`
+
+  ## Examples
+
+      iex> deck = Cards.create_deck()
+      iex> Cards.contains?(deck, "Ace of Spades")
+      true
+
   """
   def contains?(deck, card) do
     Enum.member?(deck, card)
@@ -37,9 +44,9 @@ defmodule Cards do
 
   ## Examples
 
-      iex > deck = Cards.create_deck()
-      iex > {hand, rest_of_deck} = Cards.deal(deck, 1)
-      iex > hand
+      iex> deck = Cards.create_deck()
+      iex> {hand, rest_of_deck} = Cards.deal(deck, 1)
+      iex> hand
       ["Ace of Spades"]
 
   """
