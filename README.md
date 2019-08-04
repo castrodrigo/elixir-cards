@@ -22,6 +22,22 @@ The main goal of this application is to create a Module which enables the user, 
 - Load the deck from FileSystem
 - Give a hand (automatically, having the deck created, shuffled and the cards from the hand separated)
 
+## Docs
+
+To generate the Docs of the module it is necessary just to open a terminal window, inside the base folder of the module and then type
+
+```
+mix docs
+```
+
+## Testing
+
+Elixir has a quite rich out-of-the-box testing support, so additional plugins or libraries are not needed in order to make the tests run or you to right them. Go to the base folder of the module and then type
+
+```
+mix type
+```
+
 ## Installation
 
 ### Elixir
