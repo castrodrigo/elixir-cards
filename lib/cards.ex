@@ -28,6 +28,14 @@ defmodule Cards do
     - The first one group of data is referring to a hand that the user will receive, with an specified number of cards.
     - The second group consists of all the other cards that are remaining in the deck.
     The `hand_size` argument denotes how many cards should be given to the user.
+
+  ## Examples
+
+      iex > deck = Cards.create_deck()
+      iex > {hand, rest_of_deck} = Cards.deal(deck, 1)
+      iex > hand
+      ["Ace of Spades"]
+
   """
   def deal(deck, hand_size) do
     Enum.split(deck, hand_size)
