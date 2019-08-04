@@ -25,3 +25,5 @@ cards-*.tar
 .elixir_ls/
 
 .DS_Store
+
+test_save
