@@ -1,7 +1,8 @@
 defmodule Cards do
   @moduledoc """
-    Provides a set of operations to create and handle a deck of cards
+    Provides a set of operations to create and handle a deck of cards.
   """
+
   @doc """
     Return a list of strings mirroring a real life deck, with a set of individual cards and their suits.
   """
@@ -22,6 +23,12 @@ defmodule Cards do
     Enum.member?(deck, card)
   end
 
+  @doc """
+    Splits a deck into two subgroups:
+    - The first one group of data is referring to a hand that the user will receive, with an specified number of cards.
+    - The second group consists of all the other cards that are remaining in the deck.
+    The `hand_size` argument denotes how many cards should be given to the user.
+  """
   def deal(deck, hand_size) do
     Enum.split(deck, hand_size)
   end
