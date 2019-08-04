@@ -44,7 +44,15 @@ mix type
 
 Excelent tutorial on official [doc](https://elixir-lang.org/install.html)
 
-### Package
+### After clone
+
+In order to download all the dependencies needed for the application to work run
+
+```
+mix deps.get
+```
+
+### As a Package
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `cards` to your list of dependencies in `mix.exs`:
